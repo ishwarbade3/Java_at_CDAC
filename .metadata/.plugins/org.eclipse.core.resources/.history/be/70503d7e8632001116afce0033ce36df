@@ -1,0 +1,74 @@
+import java.util.Scanner;
+public class Basics1 {
+	public static void main(String []ishwar) {
+		Scanner kbd = new Scanner(System.in);
+		
+		/*
+		System.out.print("Enter the Two number : ");++
+		int num1 = kbd.nextInt();
+		int num2 = kbd.nextInt();
+		if(num1 > num2) 
+			System.out.println("Greater Number is : "+num1);
+		else
+			System.out.println("Greater Number is : "+num2);
+		*/
+		/*
+		System.out.print("Enter the number : ");
+		int num = kbd.nextInt();
+		if(num %2 ==0)
+			System.out.println("Number : " + num +" is Even");
+		else
+			System.out.println("Number : " + num +" is Odd");
+			*/
+		
+		/*byte a1 = 127;
+		// byte a2 = 257; Its does not allow because range is -128 to 127
+		int a3= 257;
+		a1 = (byte)a3; //Explicit type casting
+		System.out.println("Aftet Explicit type cast  a1 value becomes : "+a1); // o/p :1
+		a3=a1; // implicit type 
+		System.out.println("Aftet implicite type cast  a1 value becomes : "+a1); // op : 1
+		
+		float f = 10.25f;// need to write f otherwise it consider double and error
+		float  avg = 5/2;
+		System.out.println("Avg becomes without casting : "+avg);
+		float avg1 = (float) 5/2;
+		System.out.println("Avg becomes after casting : "+avg1);
+		int n = 10;
+		n= n +1;
+		n++;
+		n+=1;
+		//System.out.println("O/P for 10/0 : "+ 10/0); //lang.ArithmeticException:
+		System.out.println("O/P for 10/0.0 : "+ 10/0.0); // These giving the infinity  output
+		System.out.println("O/P for 0.0/0.0 : "+ 0.0/0.0); // these giv the output NaN (Not a Number)
+		*/
+		/*int a4= 0b10111;
+		System.out.println("Binary Number 10111 becomes :"+a4);
+		
+		int c= 10;
+		int a5= c++; //assign then increment 
+		System.out.println("Post increment "+c+" "+a5);
+		int a6 = ++c;
+		System.out.println("Pre increment "+ c +" "+a6);
+		
+		double d = 10_00_0;
+		System.out.println("Double with underScore : "+d);
+		*/
+		/*System.out.print("Enter the Two number : ");
+		int num3 = kbd.nextInt();
+		int num4 = kbd.nextInt();
+		System.out.print("Maximun Num is : "+ ((num3>num4)?num3:num4));
+	    */
+		System.out.print("Enter the Three number : ");
+		int num5 = kbd.nextInt();
+		int num6 = kbd.nextInt();
+		int num7 = kbd.nextInt();
+		System.out.print("Maximun Num is : "+ ((num5 > num6 && num5> num7)? num5 :(num6>num7)? num6:num7));
+		 
+		 
+		
+		
+		kbd.close();
+	}
+
+}

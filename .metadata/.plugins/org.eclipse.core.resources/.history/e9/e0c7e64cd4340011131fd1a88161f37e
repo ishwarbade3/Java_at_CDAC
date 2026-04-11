@@ -1,0 +1,28 @@
+package person_hierarchi;
+
+public class HOD extends Teacher {
+	private String department;
+
+	public HOD() {
+	}
+
+	public HOD(String fName, String lName, int age, String subject, String department) {
+		super(fName, lName, age, subject);
+		this.department = department;
+	}
+
+	public String toString() {
+		
+		return department + " "+super.toString();
+	}
+	public void getData() {
+		super.getData();
+		System.out.print("Enter Subject Name : ");
+		department = kbd.next();
+	}
+	public void display() {
+		super.display();
+		System.out.print(department+" ");
+	}
+
+}

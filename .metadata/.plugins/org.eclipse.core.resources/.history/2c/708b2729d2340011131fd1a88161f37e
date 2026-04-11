@@ -1,0 +1,5 @@
+package person_hierarchi;
+
+public class Teacher {
+
+}

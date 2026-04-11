@@ -1,0 +1,23 @@
+package garbagecollection;
+
+public class GC {
+
+	protected void finalize() throws Throwable {
+		super.finalize();
+		System.out.println("GC called");
+	}
+
+	public static void main(String[] args) {
+		GC g1 = new GC();
+		GC g2 = new GC();
+		GC g3 = g2;
+		GC g4 = g3;
+		
+		g1=null;
+		g2=null;
+		g3=null;
+		g4=null;
+	
+	System.gc();
+	}
+}

@@ -1,0 +1,14 @@
+
+public class Basics1 {
+	public static void main(String []ishwar) {
+		
+		int num1 = 10; 
+		int num2 = 26;
+		if(num1 > num2) 
+			System.out.println("Greater Number is : "+num1);
+		else
+			System.out.println("Greater Number is : "+num2);
+		
+	}
+
+}

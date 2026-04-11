@@ -1,0 +1,28 @@
+import java.util.Scanner;
+public class CircleArea {
+	private float radius;
+	private float area;
+	
+	public CircleArea() {}
+	
+	public void initRadius(float radius) {
+		this.radius=radius;
+	}
+	public void calculateArea() {
+		area = (float)3.14 * (radius * radius);
+	}
+	public void displayArea() {
+		System.out.println("Area Of Circle : "+area);
+	}
+    public static void main(String[]ishwar) {
+    	Scanner kbd = new Scanner(System.in);
+    	System.out.print("Enter the Radius to Calculate Area : ");
+    	float r = kbd.nextFloat();    	
+    	CircleArea c = new CircleArea();
+    	c.initRadius(r);
+    	c.calculateArea();
+    	c.displayArea();
+    	
+    	kbd.close();
+    }
+}

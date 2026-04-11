@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class Test {
+	
+	public static void main(String[] args) {
+		Scanner kbd = new Scanner(System.in);
+		System.out.println("Enter Three Number : ");
+		int a =kbd.nextInt();
+		int b = kbd.nextInt();
+		int c =kbd.nextInt();
+		System.out.println((a>b)?a:(b>c)?b:c);
+		
+	}
+
+}

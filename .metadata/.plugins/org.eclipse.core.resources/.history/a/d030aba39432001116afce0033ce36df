@@ -1,0 +1,11 @@
+import java.util.Scanner;
+
+public class Assignment_Day1 {
+	public static void main(String[]ishwar) {
+		Scanner kbd = new Scanner(System.in);
+		System.out.println("\"Hello , Ishwar\"");
+		
+		kbd.close();
+	}
+
+}

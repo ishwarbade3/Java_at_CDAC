@@ -1,0 +1,20 @@
+package cdac_day04;
+
+import java.security.DomainCombiner;
+
+public class EnumD {
+     public enum Tea{CUTTING(10),NORMAL(15),KULLAD(20);
+    	 private int cost;
+    	 private Tea(int cost) {
+    		 this.cost=cost;
+    	 }
+    	 public int getCost()
+    	 {
+    		return cost; 
+    	 }
+     }
+     public static void main(String[] args) {
+		Tea t= Tea.KULLAD;
+		System.out.println(t+" "+t.getCost());
+	}
+}

@@ -1,0 +1,20 @@
+package cdac_day04;
+
+import java.security.DomainCombiner;
+
+public class B extends A {
+	public B(){}
+	
+	public void m1() {
+		System.out.println("In M1() of B cls");
+	}
+	public void m2() {
+		System.out.println("In M2() of B cls");
+	}
+	public static void main(String[] args) {
+		B b =new B();
+		//System.out.println(b.no); // private member of Parent Class we cannot Acess 
+		System.out.println(b.getNo());
+		b.m1();
+	}
+}

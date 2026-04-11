@@ -1,0 +1,35 @@
+import java.util.Scanner;
+public class Basics1 {
+	public static void main(String []ishwar) {
+		Scanner kbd = new Scanner(System.in);
+		
+		/*
+		System.out.print("Enter the Two number : ");++
+		int num1 = kbd.nextInt();
+		int num2 = kbd.nextInt();
+		if(num1 > num2) 
+			System.out.println("Greater Number is : "+num1);
+		else
+			System.out.println("Greater Number is : "+num2);
+		*/
+		/*
+		System.out.print("Enter the number : ");
+		int num = kbd.nextInt();
+		if(num %2 ==0)
+			System.out.println("Number : " + num +" is Even");
+		else
+			System.out.println("Number : " + num +" is Odd");
+			*/
+		
+		byte a1 = 127;
+		// byte a2 = 257; Its does not allow because range is -128 to 127
+		int a3= 257;
+		a1 = (byte)a3; //Explicit type casting
+		System.out.println("Aftet Explicit typw cast  a1 value becomes : "+a1);
+		
+		
+		
+		kbd.close();
+	}
+
+}

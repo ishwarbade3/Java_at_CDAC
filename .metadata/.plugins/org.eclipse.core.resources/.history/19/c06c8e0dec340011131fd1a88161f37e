@@ -1,0 +1,19 @@
+
+public class Product {
+//     private int pId;
+//     private int price;
+//     private int quantity;
+     
+     public static int arr[][]= new int [5][3];
+     private static int counter=0;
+     
+     public Product() {};
+     
+     public Product(int pId,int price,int quantity) {
+    	 arr[counter][0]=pId;
+    	 arr[counter][1]=price;
+    	 arr[counter][2]=quantity;
+    	 counter++;
+     }
+
+}

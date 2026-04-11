@@ -1,0 +1,21 @@
+package p1;
+import static java.lang.System.out;
+
+public class A {
+	//private int no;
+	//protected int no;
+	public int no;
+	//int no;
+	
+	public A()	{
+	no=12;
+	}
+	public int getA() {
+		return no;	
+	}
+	public static void main(String[]ishwar) {
+		A a=new A();
+		out.println(a.getA());		
+	}
+
+}

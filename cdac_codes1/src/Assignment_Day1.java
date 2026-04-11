@@ -1,0 +1,75 @@
+import java.util.Scanner;
+
+public class Assignment_Day1 {
+	public static void main(String[]ishwar) {
+		Scanner kbd = new Scanner(System.in);
+		
+		System.out.println("\"Hello, Ishwar\"");
+		
+		
+		System.out.println("Enter two number : ");
+		int a =kbd.nextInt();
+		int b = kbd.nextInt();
+		System.out.println("Addition : "+(a+b));
+		
+		
+		System.out.println("Enter a number : ");
+		int c =kbd.nextInt();
+		System.out.println((c%2==0)?c+" is Even Number":c+" is Odd Number");
+		
+		
+		System.out.println("Enter Three Number : ");
+		int a1 =kbd.nextInt();
+		int a2 = kbd.nextInt();
+		int a3 =kbd.nextInt();
+		System.out.println("Maximum Number is : "+((a1>a2&&a1>a3)?a1:(a2>a3)?a2:a3));
+		
+		
+		
+		System.out.println("Enter a Number : ");
+		int a4 =kbd.nextInt();
+		if(a4 >= 0) {
+		System.out.println("Number is Positive : "+a4);
+		}
+		else if(a4<0) {
+		System.out.println("Number is Negative : "+a4);
+		}
+		else {
+		System.out.println("Number is Zero : "+a4);
+		}
+		
+		
+		System.out.println("printing 1 to 10 using while loop");
+		int i=0;
+		while(i!=10) {
+			System.out.println((i++)+" ");	
+		}
+		
+		
+		System.out.println("\nEnter a Number : ");
+		int a5 =kbd.nextInt();
+		int sum=0;
+		for(int j=0;j<=10;j++) {
+			sum+=j;
+		}
+		System.out.println("Sum of natural no from 1 to "+a5+" is : "+sum);
+		
+		
+		System.out.println("Enter two number : ");
+		int a6= kbd.nextInt();
+		int a7= kbd.nextInt();
+		System.out.println("Val of a : before swap : "+a6);
+		System.out.println("Val of b : before swap : "+a7);
+		 a6 = a6 + a7; // 30 = a6
+	//   10 = 10 +  20;
+		 a7 = a6 - a7;//10 = a7
+	//   20 = 30 - 20;	 
+		 a6 = a6 - a7; //20 = a6
+	//   30 = 30 - 10;	 
+		 System.out.println("Val of a : After swap : "+a6);
+		 System.out.println("Val of b : After swap : "+a7);
+		
+		kbd.close();
+	}
+
+}

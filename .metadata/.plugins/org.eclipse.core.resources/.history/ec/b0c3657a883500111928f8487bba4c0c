@@ -1,0 +1,18 @@
+package garbagecollection;
+
+public class GC {
+
+	protected void finalize() throws Throwable {
+		super.finalize();
+		System.out.println("GC called");
+	}
+
+	public static void main(String[] args) {
+		GC g1 = new GC();
+		GC g2 = new GC();
+		GC g3 = new GC();
+		GC g4 = new GC();
+	
+	System.gc();
+	}
+}

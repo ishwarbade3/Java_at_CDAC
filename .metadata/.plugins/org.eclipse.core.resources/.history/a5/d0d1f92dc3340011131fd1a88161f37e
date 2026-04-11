@@ -1,0 +1,15 @@
+package cdac_day04;
+
+public class EnumDemo {
+	public enum Days{MONDAY ,TUESDAY,WEDNESDAY,THURSDAY,FRIDAY,SATURDAY,SUNDAY};
+	public static void main(String[] args) {
+		Days d = Days.SUNDAY;
+		System.out.println(d);
+		
+		for(Days d1:Days.values()) {
+			System.out.println(d1 +" "+d1.ordinal());
+		}
+//		Days d2  Days.values();
+//		System.out.println(d +" "+d.ordinal(2));  // in ordinal method we cannot pass argument
+	}
+}

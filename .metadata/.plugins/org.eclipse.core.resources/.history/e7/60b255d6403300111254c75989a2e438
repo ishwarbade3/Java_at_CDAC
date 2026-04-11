@@ -1,0 +1,24 @@
+
+public class Addition {
+	public void add(int a,int b) {
+		System.out.println("Addition : "+(a+b));
+	}
+	public void add(int a,int b, int c) {
+		System.out.println("Addition : "+(a+b+c));
+	}
+	public void add(int a,float b) {
+		System.out.println("Addition : "+(float)a+b);
+	}
+	
+	public void add(int b,int...a) {
+		int sum=0;
+		for(int i=0;i<a.length;i++) {
+			sum+=a[i];
+		}
+		System.out.println("Addition : "+(b+sum));
+	}
+public static void main(String[]ishwar) {
+	Addition a = new Addition();
+	a.add(10,20,25,2,5,4,8,1,4);
+}
+}

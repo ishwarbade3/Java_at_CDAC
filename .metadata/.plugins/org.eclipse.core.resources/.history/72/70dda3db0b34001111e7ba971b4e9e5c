@@ -1,0 +1,18 @@
+
+public class TaskDay3 {
+	public static void main(String[] ishwar) {
+		int y = 1;
+//		int x = 5;
+		y = x++ + ++x;
+		System.out.println(x + "  " + y);
+
+//		int z = 10;
+//		x = y = 20;
+		z = x++ - --y - --x + x++;
+		// 10 20 19 20 20
+		System.out.println(x + "  " + y + "  " + z);
+		 z = 10;
+		x = y = 20;
+//		z = ((x && y) || !(x || y));
+	}
+}
