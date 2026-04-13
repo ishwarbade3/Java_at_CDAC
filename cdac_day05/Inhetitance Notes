@@ -1,0 +1,36 @@
+*******Inheritance *****
+
+### one class acquire properties of another class is inheritance
+
+###Advantages 
+         1. re-usability
+         2. Extensibility
+        
+        ### Types of inheritance ###
+        
+        1.  Single Inheritance :
+                             one class inherit from another parent class 
+                             
+        2.  Multi-Level Inheritance :
+                               one class inherit from another  class and  another class also inherit from base/parent Class.
+        3.  Hierarchical Inheritance :
+                                one or more classes inherit from same base class is Hierarchical inheritance.
+                                
+                                
+                                
+                                
+       ******/  Multiple Inheritance is not in Java :
+                                              But it can be possible using interfaces in java.                                                                  
+
+
+
+       
+
+
+
+
+
+
+
+
+

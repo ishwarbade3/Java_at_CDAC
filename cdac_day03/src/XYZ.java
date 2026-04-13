@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class XYZ {
-	private int arr[][] = new int[5][3];
+	// private int arr[][] = new int[5][3];
 	protected Scanner kbd = new Scanner(System.in);
 //	public void acceptData() {
 //		System.out.println("Enter the data (productID,Price,Quantity)");
@@ -26,109 +26,91 @@ public class XYZ {
 //		}
 //		System.out.println("P_ID : "+id+" with highest price : "+high);
 //	}
-	
+
 	public static int calculatetotal(Product[] p) {
-		int sum=0;
-		for(Product pp : p) {
-			sum =sum + (pp.price * pp.quantity);
+		int sum = 0;
+		for (Product pp : p) {
+			sum = sum + (pp.price * pp.quantity);
 		}
 		return sum;
 	}
+
 	public static void main(String[] args) {
 		Scanner kbd = new Scanner(System.in);
 		Product[] p = new Product[5];
-		
-		for(int i=0;i<5;i++) {
-			System.out.println("Enter the " + (i+1) +"st Product detail ");
-			
+
+		for (int i = 0; i < 5; i++) {
+			System.out.println("Enter the " + (i + 1) + "st Product detail ");
+
 			System.out.print("Enter the Product ID   : ");
-			int id =kbd.nextInt();
+			int id = kbd.nextInt();
 			System.out.print("Enter the Product Price: ");
-			int price =kbd.nextInt();
+			int price = kbd.nextInt();
 			System.out.print("Enter the Product Qty  : ");
-			int qty =kbd.nextInt();
-			
-			p[i]= new Product(id,price,qty);
+			int qty = kbd.nextInt();
+
+			p[i] = new Product(id, price, qty);
 		}
 		XYZ x = new XYZ();
-		//x.acceptData();
-		//x.highPriceID();
-		
+		// x.acceptData();
+		// x.highPriceID();
+
 		int maxprice = p[0].price;
 		int mid = p[0].pId;
-		
-		for(int i=0;i<p.length;i++) {
-			if(p[i].price > maxprice) {
+
+		for (int i = 0; i < p.length; i++) {
+			if (p[i].price > maxprice) {
 				maxprice = p[i].price;
-				mid=p[i].pId;
+				mid = p[i].pId;
 			}
 		}
-		System.out.println("P_ID : "+mid+" with highest price : "+maxprice);
-		
-		System.out.println("All Product Price : "+XYZ.calculatetotal(p));
-		
-		
-		for(Product pp : p) {
-			System.out.println(pp.pId+"  "+pp.price +"  "+ pp.quantity);
+		System.out.println("P_ID : " + mid + " with highest price : " + maxprice);
+
+		System.out.println("All Product Price : " + XYZ.calculatetotal(p));
+
+		for (Product pp : p) {
+			System.out.println(pp.pId + "  " + pp.price + "  " + pp.quantity);
 		}
-		
+		kbd.close();
 	}
 
 }
 /*
  * import java.util.Scanner;
-
-public class XYZ {
-
-    // Method to calculate total amount spent
-    public static double calculateTotal(Product[] products) {
-        double total = 0;
-        for (Product p : products) {
-            total += p.price * p.quantity;
-        }
-        return total;
-    }
-
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-
-        Product[] products = new Product[5];
-
-        // Accept 5 product details
-        for (int i = 0; i < 5; i++) {
-            System.out.println("Enter details for product " + (i + 1));
-
-            System.out.print("Enter Product ID: ");
-            int pid = sc.nextInt();
-
-            System.out.print("Enter Price: ");
-            double price = sc.nextDouble();
-
-            System.out.print("Enter Quantity: ");
-            int quantity = sc.nextInt();
-
-            products[i] = new Product(pid, price, quantity);
-        }
-
-        // Find product with highest price
-        double maxPrice = products[0].price;
-        int maxPid = products[0].pid;
-
-        for (int i = 1; i < products.length; i++) {
-            if (products[i].price > maxPrice) {
-                maxPrice = products[i].price;
-                maxPid = products[i].pid;
-            }
-        }
-
-        System.out.println("\nProduct ID with highest price: " + maxPid);
-
-        // Calculate total amount spent
-        double totalAmount = calculateTotal(products);
-        System.out.println("Total amount spent on all products: " + totalAmount);
-
-        sc.close();
-    }
-}
- 
-  */
+ * 
+ * public class XYZ {
+ * 
+ * // Method to calculate total amount spent public static double
+ * calculateTotal(Product[] products) { double total = 0; for (Product p :
+ * products) { total += p.price * p.quantity; } return total; }
+ * 
+ * public static void main(String[] args) { Scanner sc = new Scanner(System.in);
+ * 
+ * Product[] products = new Product[5];
+ * 
+ * // Accept 5 product details for (int i = 0; i < 5; i++) {
+ * System.out.println("Enter details for product " + (i + 1));
+ * 
+ * System.out.print("Enter Product ID: "); int pid = sc.nextInt();
+ * 
+ * System.out.print("Enter Price: "); double price = sc.nextDouble();
+ * 
+ * System.out.print("Enter Quantity: "); int quantity = sc.nextInt();
+ * 
+ * products[i] = new Product(pid, price, quantity); }
+ * 
+ * // Find product with highest price double maxPrice = products[0].price; int
+ * maxPid = products[0].pid;
+ * 
+ * for (int i = 1; i < products.length; i++) { if (products[i].price > maxPrice)
+ * { maxPrice = products[i].price; maxPid = products[i].pid; } }
+ * 
+ * System.out.println("\nProduct ID with highest price: " + maxPid);
+ * 
+ * // Calculate total amount spent double totalAmount =
+ * calculateTotal(products);
+ * System.out.println("Total amount spent on all products: " + totalAmount);
+ * 
+ * kbd.close(); } }
+ * 
+ */

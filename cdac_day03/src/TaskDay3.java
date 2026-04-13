@@ -34,45 +34,25 @@ public class TaskDay3 {
 		 * (int i = 0; i < size-1; i++) { for (int j = i+1; j < size; j++) { if (arr1[i]
 		 * < arr1[j]) { int temp = arr1[i]; arr1[i] = arr1[j]; arr1[j] = temp; } } } for
 		 * (int a : arr1) { System.out.print(a + " "); }
-		 
-
-		int[][] arr = new int[5][];
-		System.out.println("Enter array Element : ");
-		int counter = 0;
-		int colSize;
-		for (int i = 0; i < 5; i++) {
-
-			int remaining = 17 - counter;
-			if (i == 4) {
-				colSize = remaining;
-				System.out.println("Row " + i + " will have " + colSize + " elements (auto-filled to reach 17)");
-			} else {
-				while (true) {
-					System.out.print("Enter column size for row " + i + " (max " + remaining + "): ");
-					colSize = kbd.nextInt();
-
-					if (colSize > 0 && colSize <= remaining - (4 - i)) {
-						break;
-					} else {
-						System.out.println("Invalid! Ensure total elements = 17.");
-					}
-				}
-			}
-			arr[i] = new int[colSize];
-			counter += colSize;
-			for (int j = 0; j < colSize; j++) {
-				System.out.print("Enter array Element at index [" + i + "] [" + j + "] : ");
-				arr[i][j] = kbd.nextInt();
-			}
-		}
-		System.out.println("Array Becomes : ");
-		for (int a[] : arr) {
-			System.out.println();
-			for (int i : a) {
-				System.out.print(i + " ");
-			}
-		}
-	
+		 * 
+		 * 
+		 * int[][] arr = new int[5][]; System.out.println("Enter array Element : "); int
+		 * counter = 0; int colSize; for (int i = 0; i < 5; i++) {
+		 * 
+		 * int remaining = 17 - counter; if (i == 4) { colSize = remaining;
+		 * System.out.println("Row " + i + " will have " + colSize +
+		 * " elements (auto-filled to reach 17)"); } else { while (true) {
+		 * System.out.print("Enter column size for row " + i + " (max " + remaining +
+		 * "): "); colSize = kbd.nextInt();
+		 * 
+		 * if (colSize > 0 && colSize <= remaining - (4 - i)) { break; } else {
+		 * System.out.println("Invalid! Ensure total elements = 17."); } } } arr[i] =
+		 * new int[colSize]; counter += colSize; for (int j = 0; j < colSize; j++) {
+		 * System.out.print("Enter array Element at index [" + i + "] [" + j + "] : ");
+		 * arr[i][j] = kbd.nextInt(); } } System.out.println("Array Becomes : "); for
+		 * (int a[] : arr) { System.out.println(); for (int i : a) { System.out.print(i
+		 * + " "); } }
+		 * 
 		 * 
 		 * int[][] arr1 = new int[3][3];
 		 * System.out.println("Enter array Element for arr1 : "); for (int i = 0; i < 3;
@@ -91,21 +71,14 @@ public class TaskDay3 {
 		 * 
 		 * for(int i[]:arr3) { System.out.println(); for(int a :i) {
 		 * System.out.print("  "+a); } }
-		 
-		
-		System.out.print("Enter array Size : ");
-		int size = kbd.nextInt();
-		int [][] arr=new int[size];
-		System.out.println("Enter array Element : ");
-		for(int i=0;i<size;i++) {
-			System.out.print("Enter array Element at index "+i+" : ");
-			arr[i]=kbd.nextInt();	
-			}
-		System.out.println("Array Becomes : ");
-		for(int a :arr) {
-			System.out.print(a+" ");
-		}
-		*/
-
+		 * 
+		 * 
+		 * System.out.print("Enter array Size : "); int size = kbd.nextInt(); int [][]
+		 * arr=new int[size]; System.out.println("Enter array Element : "); for(int
+		 * i=0;i<size;i++) { System.out.print("Enter array Element at index "+i+" : ");
+		 * arr[i]=kbd.nextInt(); } System.out.println("Array Becomes : "); for(int a
+		 * :arr) { System.out.print(a+" "); }
+		 */
+		kbd.close();
 	}
 }

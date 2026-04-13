@@ -2,7 +2,7 @@ package constants;
 
 public class M {
 	
-	private final float PI;
+	private final float PI ;
 	
 	public M()
 	{
@@ -13,5 +13,8 @@ public class M {
 	}
 	public final void m1() {
 		System.out.println("In Class  M final ");
+	}
+	public void displayPI() {
+		System.out.println("PI value : "+PI);
 	}
 }
