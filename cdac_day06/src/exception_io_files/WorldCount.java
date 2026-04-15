@@ -14,6 +14,7 @@ public class WorldCount {
 			}
 			String strarr=str.trim();
 			boolean inWord = false;
+			
 			for (int i = 0; i < strarr.length(); i++) {
 			    char ch = strarr.charAt(i);
 
