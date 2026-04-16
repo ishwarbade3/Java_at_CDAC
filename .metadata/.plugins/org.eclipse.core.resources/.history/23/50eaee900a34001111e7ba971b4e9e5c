@@ -1,9 +1,0 @@
-
-public class TaskDay3 {
-	public static void main(String[]ishwar) {
-		int y=0;
-		int x=5;
-		y= x++ + ++x;
-		System.out.println(x+"  "+y);
-	}
-}
