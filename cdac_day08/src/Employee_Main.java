@@ -1,4 +1,6 @@
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 import java.util.Scanner;
 
 public class Employee_Main {
@@ -127,6 +129,10 @@ public class Employee_Main {
 //			}
 			
 //		}
+		Collections.sort( emp);
+		System.out.println(emp);
+		
+		
 
 	}
 }
