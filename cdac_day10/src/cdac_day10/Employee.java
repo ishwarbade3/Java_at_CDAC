@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Employee implements Comparable<Employee> {
 
-	private int empId;
+	public int empId;
 	private String empName;
 	private double empSalary;
 
