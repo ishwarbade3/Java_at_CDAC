@@ -29,11 +29,16 @@ public class Demo2 {
 			r1.seek(10);
 			System.out.println(r1.getFilePointer());
 			int x=0;
-			do {
-				x=r1.read();
+//			do {
+//				x=r1.read();
+//				System.out.print((char)x);
+//				r2.write(x);
+//			}while(x!=-1);
+			
+			while((x=r1.read())!=-1) {
 				System.out.print((char)x);
 				r2.write(x);
-			}while(x!=-1);
+			}
 			
 			
 			
