@@ -38,7 +38,8 @@ public class Product_Main {
 		List<Product> cart = new ArrayList<Product>();
 		Stack<String> history = new Stack<String>();
 
-		while (true) {
+		boolean cond =false;
+		while (cond) {
 			System.out.println(
 					" ***** Options ****** \n1. Add Product \n2. Remove Product \n3. Display Cart \n4. History \n5. Exit");
 			System.out.println("Enter Your Choice ::");
@@ -99,6 +100,7 @@ public class Product_Main {
 			}
 			kbd.close();
 		}
+		System.out.println();
 
 	}
 
