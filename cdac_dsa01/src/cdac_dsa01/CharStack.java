@@ -31,10 +31,10 @@ public class CharStack {
 	public void push(char ch) {
 		if (!isFull()) {
 			arr[++top] = ch;
-			System.out.println("Element Push Sucessfully!!!");
+			//System.out.println("Element Push Sucessfully!!!");
 			return;
 		}
-		System.out.println("Stack is Already Full!!!");
+		//System.out.println("Stack is Already Full!!!");
 	}
 
 	public char pop() {

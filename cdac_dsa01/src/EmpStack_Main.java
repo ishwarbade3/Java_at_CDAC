@@ -37,7 +37,7 @@ public class EmpStack_Main {
 				}
 				break;
 			case 3:
-				Employee e2 = emp.pop();
+				Employee e2 = emp.peek();
 				if (e2 != null) {
 					System.out.println(e2);
 					System.out.println("Employee Info Fetch Sucessfully!!!!");
