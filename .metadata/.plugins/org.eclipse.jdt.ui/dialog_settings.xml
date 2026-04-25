@@ -36,7 +36,7 @@
 		<item key="VisibilityModifier" value="1"/>
 		<item key="FinalModifier" value="false"/>
 		<item key="SynchronizedModifier" value="false"/>
-		<item key="Comments" value="true"/>
+		<item key="Comments" value="false"/>
 		<item key="LimitElements" value="false"/>
 		<item key="IgnoreDefault" value="true"/>
 		<item key="StringStyle" value="0"/>
@@ -48,7 +48,7 @@
 		<item key="Objects.equals &amp; Objects.hash" value="true"/>
 	</section>
 	<section name="AddGetterSetterDialog">
-		<item key="SortOrdering" value="false"/>
+		<item key="SortOrdering" value="true"/>
 		<item key="RemoveFinal" value="false"/>
 	</section>
 	<section name="DialogBounds_GetterSetterTreeSelectionDialog">

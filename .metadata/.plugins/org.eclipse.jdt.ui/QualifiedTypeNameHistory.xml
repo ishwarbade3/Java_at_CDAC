@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.lang.Override"/>
-    <fullyQualifiedTypeName name="java.lang.Deprecated"/>
-    <fullyQualifiedTypeName name="java.util.function.BiConsumer"/>
     <fullyQualifiedTypeName name="java.util.regex.Pattern"/>
     <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="java.util.StringTokenizer"/>
@@ -60,4 +57,7 @@
     <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.util.Map"/>
     <fullyQualifiedTypeName name="java.util.HashMap"/>
+    <fullyQualifiedTypeName name="queue_demo.Int_Queue"/>
+    <fullyQualifiedTypeName name="queue_demo.Circular_Queue"/>
+    <fullyQualifiedTypeName name="linkedlist.LinkedList"/>
 </qualifiedTypeNameHistroy>
